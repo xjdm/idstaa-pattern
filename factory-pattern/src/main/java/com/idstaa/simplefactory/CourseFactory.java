@@ -9,12 +9,12 @@ import com.idstaa.PythonCourse;
  * @date 2019/3/15 14:45
  */
 public class CourseFactory {
-    public ICourse create(String name){
-        if ("java".equals(name)){
-            return  new JavaCourse();
-        } else if("python".equals(name)){
+    public ICourse create(String name) {
+        if ("java".equals(name)) {
+            return new JavaCourse();
+        } else if ("python".equals(name)) {
             return new PythonCourse();
-        }else {
+        } else {
             throw new RuntimeException("没有该类型的课程");
         }
     }

@@ -8,14 +8,10 @@ import com.idstaa.ICourse;
  */
 public class CourseFactory2 {
     public ICourse create(String className) {
-        if (className != null && !"".equals(className)){
+        if (className != null && !"".equals(className)) {
             try {
-                return (ICourse)Class.forName(className).newInstance();
-            } catch (InstantiationException e) {
-                e.printStackTrace();
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            } catch (ClassNotFoundException e) {
+                return (ICourse) Class.forName(className).newInstance();
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
