@@ -2,8 +2,8 @@
 设计模式
 
 #### 简单工厂设计模式
-#####举例一、JDK中Calendar类
-#####举例二、LoggerFactory类
+##### 举例一、JDK中Calendar类
+##### 举例二、LoggerFactory类
 ````
 缺点：工厂类的职责相对过重，不易于扩展过于复杂的产品结构
 ````
