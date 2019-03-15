@@ -6,7 +6,7 @@ package com.idstaa.abstractfactory;
  */
 public class AbstractFactoryTest {
     public static void main(String[] args) {
-        JavaCourceFactory factory = new JavaCourceFactory();
+        JavaCourseFactory factory = new JavaCourseFactory();
         factory.createNote().edit();
         factory.createVideo().record();
     }

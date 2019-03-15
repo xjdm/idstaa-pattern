@@ -5,5 +5,8 @@ package com.idstaa.abstractfactory;
  * @date 2019/3/15 15:49
  */
 public interface INote {
+    /**
+     *编写
+     */
     void edit();
 }

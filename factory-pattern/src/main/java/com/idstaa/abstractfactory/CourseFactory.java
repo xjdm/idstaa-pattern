@@ -15,7 +15,7 @@ public interface CourseFactory {
     /**
      * 创建视频
      *
-     * @return
+     * @return 返回视频类
      */
     IVideo createVideo();
 }
