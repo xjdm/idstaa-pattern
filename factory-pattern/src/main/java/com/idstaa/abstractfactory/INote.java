@@ -6,7 +6,7 @@ package com.idstaa.abstractfactory;
  */
 public interface INote {
     /**
-     *编写
+     * 编写
      */
     void edit();
 }
