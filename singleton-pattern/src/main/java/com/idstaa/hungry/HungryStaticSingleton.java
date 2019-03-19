@@ -7,16 +7,16 @@ package com.idstaa.hungry;
  * @date 2019/3/18 15:52
  */
 public class HungryStaticSingleton {
-    private static final HungryStaticSingleton hungryStaticSingleton;
+    private static final HungryStaticSingleton HUNGRY_STATIC_SINGLETON;
 
     static {
-        hungryStaticSingleton = new HungryStaticSingleton();
+        HUNGRY_STATIC_SINGLETON = new HungryStaticSingleton();
     }
 
     private HungryStaticSingleton() {
     }
 
     public static HungryStaticSingleton getInstance() {
-        return hungryStaticSingleton;
+        return HUNGRY_STATIC_SINGLETON;
     }
 }

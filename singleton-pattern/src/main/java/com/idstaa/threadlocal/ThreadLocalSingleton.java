@@ -5,10 +5,11 @@ package com.idstaa.threadlocal;
  * @date 2019/3/18 16:36
  */
 public class ThreadLocalSingleton {
-    private static final ThreadLocal<ThreadLocalSingleton> threadLocalInstance =
+    private static final ThreadLocal<ThreadLocalSingleton> THREAD_LOCAL_INSTANCE =
             ThreadLocal.withInitial(ThreadLocalSingleton::new);
 
     public static ThreadLocalSingleton getInstance() {
-        return threadLocalInstance.get();
+        return THREAD_LOCAL_INSTANCE.get();
     }
 }
+
